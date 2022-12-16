@@ -78,6 +78,9 @@
     <Build Include="dbo\Tables\MailTemplate.sql" />
     <Build Include="dbo\Tables\MailGroup.sql" />
     <None Include="data\MailAddress.sql" />
+    <None Include="data\MailTemplate.sql" />
+    <None Include="data\MailGroup.sql" />
+    <Build Include="dbo\Stored Procedures\GetSentMailInfo.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.xml" />
