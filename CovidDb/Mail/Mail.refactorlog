@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="0ff86f39-048b-4168-ac4a-6687ad3174a0" ChangeDateTime="11/04/2021 15:21:35">
+    <Property Name="ElementName" Value="[dbo].[StationInfo].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[StationInfo]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StationId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7b6aa023-e5d6-4558-834b-23114e83d081" ChangeDateTime="11/04/2021 15:23:20">
+    <Property Name="ElementName" Value="[dbo].[StationInfo].[StartTime]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[StationInfo]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CreatedOn" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f409855d-d1c2-4530-b096-3ad6c812fd85" ChangeDateTime="03/25/2022 06:37:07">
+    <Property Name="ElementName" Value="[dbo].[CustomerLoginInfo].[AppTokenId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CustomerLoginInfo]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Token" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="edda5ea1-c079-480d-ab45-d49fbc9de155" ChangeDateTime="03/25/2022 06:39:11">
+    <Property Name="ElementName" Value="[dbo].[CustomerLoginInfo].[Username]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CustomerLoginInfo]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CustomerName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8987cd22-e5ab-474d-9ab2-2fc56d37bdb1" ChangeDateTime="03/25/2022 07:08:39">
+    <Property Name="ElementName" Value="[dbo].[CustomerLoginInfo].[SessionID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CustomerLoginInfo]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SessionId" />
+  </Operation>
+</Operations>

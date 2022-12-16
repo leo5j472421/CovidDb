@@ -1,0 +1,5 @@
+CREATE TABLE [dbo].[MailGroup]
+(
+  [Id] INT NOT NULL PRIMARY KEY IDENTITY,
+  [Name] NVARCHAR(1000)
+)
