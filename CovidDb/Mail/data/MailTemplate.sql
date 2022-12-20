@@ -1,3 +1,10 @@
 TRUNCATE TABLE  [dbo].[MailTemplate]
-INSERT INTO MailTemplate (Subject,Body,MailGroup)
-VALUES ('Hey {Name} This is Testing Mail', 'Dear {Company} This is Testing Mail',1)
+SET IDENTITY_INSERT [dbo].[MailTemplate] ON 
+INSERT INTO MailTemplate (id,Subject,Body,MailGroup,IsForSent)
+VALUES (1,'Hey {Name} This is Testing Mail', 'Dear {Company} This is Testing Mail <div id=":sh" class="Am Al editable LW-avf tS-tW" hidefocus="true" aria-label="Message Body" g_editable="true" role="textbox" aria-multiline="true" contenteditable="true" tabindex="1" style="direction: ltr; min-height: 226px;" spellcheck="false" aria-owns=":10b" aria-controls=":10b">Leo test<br><font face="arial black, sans-serif">Leo test</font><br><font face="comic sans ms, sans-serif">Leo test</font><br><font size="6">Leo test</font><br><b><i><u><font color="#0000ff">Leo test<br></font></u></i></b><img data-surl="cid:ii_lbs3xmze0" src="https://download.jjddgg.com/mail/test.png" alt="test.png" width="506" height="430">​<br></div>',1,1)
+,(2,'Hi, we are SBO-568Win, now we have a special promotion for ___________ that you might be interested.' , '<div id=":q8" class="Am Al editable LW-avf tS-tW" hidefocus="true" aria-label="Message Body" g_editable="true" role="textbox" aria-multiline="true" contenteditable="true" tabindex="1" style="direction: ltr; min-height: 226px;" spellcheck="false" aria-owns=":t7" aria-controls=":t7"><span style="font-size: 10pt; font-family: Arial;">I' + CHAR(39) + 'm ______ from SBO-568win.<br>Nice to e-meet you.<br></span><img data-surl="cid:ii_lbumucf90" src=cid:(image0) width="369" height="313" style="margin-right: 0px;"><br><br>We' + CHAR(39) + 're an API &amp; Total solution business unit under the SBOBET group.<br>After the world cup, are you ready for another round to extend the business?<br>I' + CHAR(39) + 'd like to introduce <span zeum4c2="PR_4_0" data-ddnwab="PR_4_0" aria-invalid="grammar" class="Lm ng">you our</span> ________________.<br>This special promotion is the one we plan to explore more opportunities with you together.<br><br>Check the promotion website below to get more information:<br>_________________<br><br><br>This is my personal contact:
+<br>email: ____________
+<br>Telegram: ____________
+<br>WhatsApp: ____________<br><br>Thank you.<br><div>Looking forward to hearing from you, have a nice day!​<br></div></div>',2,1)
+
+SET IDENTITY_INSERT [dbo].[MailTemplate] OFF
