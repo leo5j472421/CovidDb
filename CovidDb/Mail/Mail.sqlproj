@@ -84,6 +84,8 @@
     <Build Include="dbo\Tables\Attachment.sql" />
     <None Include="data\Attachement.sql" />
     <Build Include="dbo\Stored Procedures\GetAttachments.sql" />
+    <Build Include="dbo\Stored Procedures\GetEmailTemplate.sql" />
+    <Build Include="dbo\Stored Procedures\SentMail.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.xml" />

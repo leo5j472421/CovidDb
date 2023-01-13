@@ -1,10 +1,8 @@
 CREATE PROCEDURE [dbo].[GetSentMailInfo]
-  @mailGroup int = 1,
-  @isTest bit = 1
+  @isTest bit = 1,
+  @count int
 AS
-SELECT b.Id as templateId ,Mail, Name, Company, Subject, Body
+SELECT Top (@count) Mail, Name, Company
 From [dbo].[MailAddress] a WITH (NOLOCK)
-  LEFT JOIN [dbo].[MailTemplate] b  WITH (NOLOCK)
-  ON a.[MailGroup] = b.[MailGroup]
-WHERE  a.[IsTest] = @isTest and  b.[MailGroup] = @mailgroup and b.IsForSent = 1
+WHERE  a.[IsTest] = @isTest AND (@isTest = 1 OR SentTime = null)
 RETURN 0

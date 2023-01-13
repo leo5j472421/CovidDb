@@ -4,6 +4,7 @@ CREATE TABLE [dbo].[MailAddress]
   [Mail] NVARCHAR(100),
   [Name] NVARCHAR(100),
   [Company] NVARCHAR(100),
+  [SentTime] DATETIME,
   [IsTest] BIT,
   [MailGroup] INT,
 )

@@ -4,4 +4,5 @@ AS
   SELECT [Path],
   [IsLinkImage] ,
   [ContentId] FROM [dbo].[Attachment]
+  Where MailTemplateId = @mailTemplateId 
 RETURN 0
