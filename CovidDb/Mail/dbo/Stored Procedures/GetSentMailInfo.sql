@@ -4,5 +4,5 @@ CREATE PROCEDURE [dbo].[GetSentMailInfo]
 AS
 SELECT Top (@count) Mail, Name, Company
 From [dbo].[MailAddress] a WITH (NOLOCK)
-WHERE  a.[IsTest] = @isTest AND (@isTest = 1 OR SentTime = null)
+WHERE  a.[IsTest] = @isTest AND (@isTest = 1 OR SentTime is null)
 RETURN 0
